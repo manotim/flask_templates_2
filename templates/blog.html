@@ -1,0 +1,16 @@
+
+   {% extends "base.html" %}
+   {% block content %}
+   {%if sunny%}
+   <p>Today is Sunny</p>
+   {%else %}
+   <p>Not a Sunny day</p>
+   {%endif%}
+
+   {%for post in posts%}
+       <h1>Title: {{post.title}}</h1>
+       <h3>Author: {{post.author}}</h3>
+   {% endfor %}
+
+   {% endblock %}
+       
